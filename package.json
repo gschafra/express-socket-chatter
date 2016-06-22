@@ -8,7 +8,9 @@
     "express": "^4.14.0",
     "socket.io": "^1.4.6"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

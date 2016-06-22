@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
-var server = require('http').createServer(app);
-var io = require('socket.io')(server);
+var server = require('http').createServer(app).listen(3000);
+var io = require('socket.io').listen(server);
 
 io.on('connection', function(client){
   console.log('Socket client connected...');
@@ -9,6 +9,7 @@ io.on('connection', function(client){
 app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
   res.render('pages/index');
-}).listen(3000, function(){
-  console.log('Express app listing...');
 });
+/*.listen(3000, function(){
+  console.log('Express app listing...');
+});*/

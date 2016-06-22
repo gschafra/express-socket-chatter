@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Pivotal Search</title>
+    <title>Chatter</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -12,13 +12,85 @@
     <![endif]-->
 
     <!-- styles -->
-    <link href="stylesheets/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script>
       var socket = io();
     </script>
   </head>
   <body>
-    Hi!
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2">
+			<div class="list-group">
+				 <a href="#" class="list-group-item active">Home</a>
+				<div class="list-group-item">
+					List header
+				</div>
+				<div class="list-group-item">
+					<h4 class="list-group-item-heading">
+						List group item heading
+					</h4>
+					<p class="list-group-item-text">
+						...
+					</p>
+				</div>
+				<div class="list-group-item">
+					<span class="badge">14</span>Help
+				</div> <a class="list-group-item active"><span class="badge">14</span>Help</a>
+			</div>
+		</div>
+		<div class="col-md-10">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<form class="form-horizontal" role="form">
+				<div class="form-group">
+
+					<label for="inputEmail3" class="col-sm-2 control-label">
+						Email
+					</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail3" />
+					</div>
+				</div>
+				<div class="form-group">
+
+					<label for="inputPassword3" class="col-sm-2 control-label">
+						Password
+					</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="inputPassword3" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<div class="checkbox">
+
+							<label>
+								<input type="checkbox" /> Remember me
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+
+						<button type="submit" class="btn btn-default">
+							Sign in
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
   </body>
 </html>
