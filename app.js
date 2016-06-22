@@ -4,7 +4,7 @@ var server = require('http').createServer(app).listen(3000);
 var io = require('socket.io').listen(server);
 
 io.on('connection', function(client){
-  console.log('Socket client connected...');
+  console.log('Socket client connected...'); 
 });
 app.set('view engine', 'ejs');
 app.get('/', function(req, res) {
